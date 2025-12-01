@@ -24,7 +24,8 @@ if handedness == "Right":
 else:
     target_dict = lefty_pitchers
     scaler = scaler_left
-
+#Idea for trackman data to be uploaded as a csv
+#uploaded_file= st.file_uploader("Your Trackman Data") 
 st.subheader("Enter your pitch metrics:")
 st.caption("First, enter your general release info (applies to all pitches).")
 

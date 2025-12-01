@@ -69,7 +69,7 @@ with open('lefty_pitchers.pkl', 'wb') as f:
 with open('righty_pitchers.pkl', 'wb') as f:
     pickle.dump(righty_pitchers, f)
 
-# === Optional: Load to check ===
+
 '''
 
 
