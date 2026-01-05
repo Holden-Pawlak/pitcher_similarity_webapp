@@ -29,7 +29,7 @@ else:
 st.subheader("Enter your pitch metrics:")
 st.caption("First, enter your general release info (applies to all pitches).")
 
-# One-time release metrics
+
 col1, col2, col3 = st.columns(3)
 with col1:
     release_pos_x = st.number_input("Release Side(ft)", value=0.0, step=0.1)*-1 #mlb release side is flipped from rapsodo
@@ -43,7 +43,7 @@ st.divider()
 st.subheader("Enter your pitch types:")
 st.caption("Each pitch should have: speed(mph), horizontal movement (inches), induced vertical break (inches)")
 
-# Dynamic pitch input (simplified)
+
 user_pitches = {}
 pitch_types = st.multiselect("Which pitch types do you throw?", ["FF", "SL", "CH", "CU", "SI", "FC", "SP"])
 for pitch in pitch_types:
