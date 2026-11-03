@@ -4,7 +4,7 @@ import numpy as np
 from sklearn.preprocessing import StandardScaler
 #df_2023= pd.read_csv("pitches_2023.csv")
 #df_2024=pd.read_csv("pitches_2024.csv")
-#df_2025=pd.read_csv("pitches_2024.csv")
+#df_2025=pd.read_csv("pitches_2025.csv")
 
 '''# No longer need to run this once the dictionaries are loaded
 years = [(df_2023, 2023), (df_2024, 2024), (df_2025, 2025)]
