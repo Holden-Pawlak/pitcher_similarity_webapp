@@ -117,7 +117,7 @@ def find_most_similar_pitcher(user_pitcher, mlb_pitchers, scaler):
         if len(dists) == 0:
             continue  # skip if they have no pitch type overlaps
 
-        similarities = [100 - d for d in dists]
+        similarities =[100 / (1 + d) for d in dists]
         similarity = np.mean(similarities)
         overlap_factor = len(common) / len(user_pitch_types)
         final_score = 0.85 * similarity + 0.15 * (overlap_factor * 100)
